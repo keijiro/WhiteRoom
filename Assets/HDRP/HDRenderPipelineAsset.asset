@@ -39,7 +39,8 @@ MonoBehaviour:
     maximumDeformerCount: 64
     supportWaterFoam: 0
     foamAtlasSize: 512
-    waterCPUSimulation: 0
+    waterScriptInteractionsMode: 0
+    waterFullCPUSimulation: 0
     supportComputeThickness: 0
     computeThicknessResolution: 1
     computeThicknessLayerMask:
@@ -83,7 +84,7 @@ MonoBehaviour:
     supportProbeVolumeScenarios: 0
     supportProbeVolumeScenarioBlending: 1
     probeVolumeBlendingMemoryBudget: 128
-    supportRayTracing: 0
+    supportRayTracing: 1
     supportVFXRayTracing: 0
     supportedRayTracingMode: 3
     lightLoopSettings:
