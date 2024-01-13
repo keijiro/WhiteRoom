@@ -38,8 +38,8 @@ MonoBehaviour:
     m_OverrideState: 1
     m_Value: 0.4
   directLightingStrength:
-    m_OverrideState: 0
-    m_Value: 0
+    m_OverrideState: 1
+    m_Value: 1
   radius:
     m_OverrideState: 1
     m_Value: 1.5
@@ -111,7 +111,7 @@ MonoBehaviour:
   active: 1
   quality:
     m_OverrideState: 1
-    m_Value: 2
+    m_Value: 3
   enable:
     m_OverrideState: 1
     m_Value: 1
@@ -125,7 +125,7 @@ MonoBehaviour:
     m_OverrideState: 0
     m_Value: 0.1
   fullResolutionSS:
-    m_OverrideState: 0
+    m_OverrideState: 1
     m_Value: 1
   m_MaxRaySteps:
     m_OverrideState: 1
@@ -141,7 +141,7 @@ MonoBehaviour:
     m_Value: 0.5
   m_SecondDenoiserPassSS:
     m_OverrideState: 1
-    m_Value: 1
+    m_Value: 0
   lastBounceFallbackHierarchy:
     m_OverrideState: 0
     m_Value: 3
