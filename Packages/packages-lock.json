@@ -156,13 +156,6 @@
         "com.unity.render-pipelines.core": "16.0.5"
       }
     },
-    "jp.keijiro.danish-statues": {
-      "version": "1.0.0",
-      "depth": 0,
-      "source": "registry",
-      "dependencies": {},
-      "url": "https://registry.npmjs.com"
-    },
     "jp.keijiro.metamesh": {
       "version": "1.2.0",
       "depth": 0,
