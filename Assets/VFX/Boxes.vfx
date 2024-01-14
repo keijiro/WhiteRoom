@@ -144,10 +144,10 @@ MonoBehaviour:
   categories: []
   uiBounds:
     serializedVersion: 2
-    x: -990
+    x: -989
     y: 132
-    width: 1749
-    height: 1657
+    width: 1748
+    height: 1652
 --- !u!114 &114350483966674978
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -431,7 +431,7 @@ MonoBehaviour:
       m_Type:
         m_SerializableType: UnityEngine.Vector3, UnityEngine.CoreModule, Version=0.0.0.0,
           Culture=neutral, PublicKeyToken=null
-      m_SerializableObject: '{"x":20.0,"y":8.0,"z":4.0}'
+      m_SerializableObject: '{"x":20.0,"y":6.0,"z":4.0}'
     m_Space: -1
   m_Property:
     name: o
