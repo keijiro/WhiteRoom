@@ -8,17 +8,86 @@ namespace WhiteRoom {
 [ExecuteInEditMode]
 public sealed class LightController : MonoBehaviour
 {
+    #region Public properties
+
     [field:SerializeField] public uint2 Dimensions { get; set; }
     [field:SerializeField] public float Size { get; set; }
     [field:SerializeField] public float Margin { get; set; }
     [field:SerializeField] public float Intensity { get; set; }
 
-    List<GameObject> _instances = new List<GameObject>();
+    #endregion
+
+    #region Light instance management
+
+    List<(GameObject go, HDAdditionalLightData light)> _instances =
+      new List<(GameObject, HDAdditionalLightData)>();
+
     bool _shouldReset;
+
+    void RemoveInstances()
+    {
+        foreach (var i in _instances) DestroyImmediate(i.go);
+        _instances.Clear();
+    }
+
+    void PopulateInstances()
+    {
+        for (var x = 0; x < Dimensions.x; x++)
+            for (var z = 0; z < Dimensions.y; z++)
+                _instances.Add(CreateInstance(x, z));
+    }
+
+    (GameObject, HDAdditionalLightData) CreateInstance(int column, int row)
+    {
+        var p = math.float2(column, row);
+        p -= (float2)(Dimensions - 1) * 0.5f;
+        p *= Size;
+
+        var go = new GameObject("Light (Hidden)");
+        go.hideFlags = HideFlags.HideAndDontSave;
+
+        go.transform.parent = transform;
+        go.transform.localPosition = math.float3(p.x, 0, p.y);
+        go.transform.localRotation = quaternion.RotateX(math.PI / 2);
+
+        var light = go.AddComponent<Light>();
+        light.type = LightType.Rectangle;
+
+        var hdlight = go.AddComponent<HDAdditionalLightData>();
+        hdlight.displayAreaLightEmissiveMesh = true;
+        hdlight.SetAreaLightSize((float2)(Size - Margin));
+
+        return (go, hdlight);
+    }
+
+    #endregion
+
+    #region Light color animation
+
+    Color GetLightColor1(float3 p, float t)
+    {
+        var x = noise.snoise(p.xz + math.float2(0, t * 0.4f));
+        var hue = math.frac(0.8f + 0.2f * x);
+        return Color.HSVToRGB(hue, 0.8f, 1);
+    }
+
+    Color GetLightColor2(float3 p, float t)
+    {
+        var x = noise.snoise(p.xz + math.float2(0, t * 0.1f));
+        var hue = math.frac(0.5f + 0.2f * x);
+        return Color.HSVToRGB(hue, 0.4f, 1);
+    }
+
+    #endregion
+
+    #region MonoBehaviour implementation
 
     void OnValidate()
     {
         Dimensions = math.min(Dimensions, 8);
+        Size = math.max(Size, 0);
+        Margin = math.max(Margin, 0);
+        Intensity = math.max(Intensity, 0);
         _shouldReset = true;
     }
 
@@ -27,65 +96,21 @@ public sealed class LightController : MonoBehaviour
 
     void Update()
     {
-        if (!_shouldReset) return;
-
-        foreach (var go in _instances) DestroyImmediate(go);
-        _instances.Clear();
-
-        for (var z = 0; z < Dimensions.y; z++)
+        if (_shouldReset)
         {
-            for (var x = 0; x < Dimensions.x; x++)
-            {
-                var p = math.float2(x, z);
-                p -= (float2)(Dimensions - 1) * 0.5f;
-                p *= Size;
-
-                var go = new GameObject("Light");
-                go.hideFlags = HideFlags.DontSave;
-                go.transform.parent = transform;
-                go.transform.localPosition = math.float3(p.x, 0, p.y);
-
-                var light = go.AddComponent<Light>();
-                var hdlight = go.AddComponent<HDAdditionalLightData>();
-
-                hdlight.intensity = Intensity;
-
-                _instances.Add(go);
-            }
+            RemoveInstances();
+            PopulateInstances();
+            _shouldReset = false;
         }
 
-        _shouldReset = false;
-    }
-
-    /*
-    HDAdditionalLightData[] _lights;
-
-    void Start()
-      => _lights = GetComponentsInChildren<HDAdditionalLightData>();
-
-    Color GetLightColor(float3 p, float t)
-    {
-        var x = noise.snoise(p.xz + math.float2(0, t * 0.4f));
-        var hue = math.frac(0.8f + 0.2f * x);
-        return Color.HSVToRGB(hue, 0.8f, 1);
-    }
-
-    Color GetLightColor(float3 p, float t)
-    {
-        var x = noise.snoise(p.xz + math.float2(0, t * 0.1f));
-        var hue = math.frac(0.5f + 0.2f * x);
-        return Color.HSVToRGB(hue, 0.4f, 1);
-    }
-
-    void Update()
-    {
-        foreach (var l in _lights)
+        foreach (var (go, light) in _instances)
         {
-            l.color = GetLightColor(l.transform.localPosition, Time.time);
-            l.intensity = 600;
+            light.color = GetLightColor1(go.transform.position, Time.time);
+            light.intensity = Intensity;
         }
     }
-    */
+
+    #endregion
 }
 
 } // namespace WhiteRoom
