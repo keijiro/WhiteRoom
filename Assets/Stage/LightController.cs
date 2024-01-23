@@ -8,45 +8,53 @@ namespace WhiteRoom {
 [ExecuteInEditMode]
 public sealed class LightController : MonoBehaviour
 {
-    [field:SerializeField] public Vector2Int Dimensions { get; set; } = new Vector2Int(4, 4);
-    [field:SerializeField] public float Size { get; set; } = 4;
-    [field:SerializeField] public float Margin { get; set; } = 0.1f;
-
-    bool _toBeReset;
+    [field:SerializeField] public uint2 Dimensions { get; set; }
+    [field:SerializeField] public float Size { get; set; }
+    [field:SerializeField] public float Margin { get; set; }
+    [field:SerializeField] public float Intensity { get; set; }
 
     List<GameObject> _instances = new List<GameObject>();
+    bool _shouldReset;
 
     void OnValidate()
     {
-        _toBeReset = true;
+        Dimensions = math.min(Dimensions, 8);
+        _shouldReset = true;
     }
 
     void Start()
-      => _toBeReset = true;
+      => _shouldReset = true;
 
     void Update()
     {
-        if (!_toBeReset) { Debug.Log("HOGE"); return;}
+        if (!_shouldReset) return;
 
-        Debug.Log(Dimensions);
-
-        foreach (var go in _instances)DestroyImmediate(go);
+        foreach (var go in _instances) DestroyImmediate(go);
         _instances.Clear();
 
         for (var z = 0; z < Dimensions.y; z++)
         {
             for (var x = 0; x < Dimensions.x; x++)
             {
+                var p = math.float2(x, z);
+                p -= (float2)(Dimensions - 1) * 0.5f;
+                p *= Size;
+
                 var go = new GameObject("Light");
                 go.hideFlags = HideFlags.DontSave;
                 go.transform.parent = transform;
-                go.transform.localPosition = new Vector3(x, 0, z) * Size;
-                go.AddComponent<Light>();
+                go.transform.localPosition = math.float3(p.x, 0, p.y);
+
+                var light = go.AddComponent<Light>();
+                var hdlight = go.AddComponent<HDAdditionalLightData>();
+
+                hdlight.intensity = Intensity;
+
                 _instances.Add(go);
             }
         }
 
-        _toBeReset = false;
+        _shouldReset = false;
     }
 
     /*
