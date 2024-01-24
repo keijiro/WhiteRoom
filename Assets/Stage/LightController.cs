@@ -68,20 +68,35 @@ public sealed class LightController : MonoBehaviour
     Color GetLightColor(float3 p, float t)
       => Animation switch
          {  0 => GetLightColor1(p, t),
-            1 => GetLightColor2(p, t) };
+            1 => GetLightColor2(p, t),
+            2 => GetLightColor3(p, t),
+            _ => GetLightColor4(p, t) };
 
     Color GetLightColor1(float3 p, float t)
+    {
+        var x = noise.snoise(p.xz + math.float2(0, t * 0.4f));
+        var v = math.saturate(1 + 0.8f * x);
+        return Color.HSVToRGB(1, 0, v);
+    }
+
+    Color GetLightColor2(float3 p, float t)
     {
         var x = noise.snoise(p.xz + math.float2(0, t * 0.4f));
         var hue = math.frac(0.8f + 0.2f * x);
         return Color.HSVToRGB(hue, 0.8f, 1);
     }
 
-    Color GetLightColor2(float3 p, float t)
+    Color GetLightColor3(float3 p, float t)
     {
         var x = noise.snoise(p.xz + math.float2(0, t * 0.1f));
         var hue = math.frac(0.5f + 0.2f * x);
         return Color.HSVToRGB(hue, 0.4f, 1);
+    }
+
+    Color GetLightColor4(float3 p, float t)
+    {
+        var hue = math.frac((p.x + p.z + 0.8f * t) * 0.3f);
+        return Color.HSVToRGB(hue, 0.9f, 1);
     }
 
     #endregion
@@ -111,7 +126,7 @@ public sealed class LightController : MonoBehaviour
 
         foreach (var (go, light) in _instances)
         {
-            light.color = GetLightColor(go.transform.position, Time.time);
+            light.color = GetLightColor(go.transform.localPosition, Time.time);
             light.intensity = Intensity;
         }
     }
