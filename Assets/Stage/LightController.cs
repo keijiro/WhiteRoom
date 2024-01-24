@@ -14,6 +14,7 @@ public sealed class LightController : MonoBehaviour
     [field:SerializeField] public float Size { get; set; }
     [field:SerializeField] public float Margin { get; set; }
     [field:SerializeField] public float Intensity { get; set; }
+    [field:SerializeField] public uint Animation { get; set; }
 
     #endregion
 
@@ -64,6 +65,11 @@ public sealed class LightController : MonoBehaviour
 
     #region Light color animation
 
+    Color GetLightColor(float3 p, float t)
+      => Animation switch
+         {  0 => GetLightColor1(p, t),
+            1 => GetLightColor2(p, t) };
+
     Color GetLightColor1(float3 p, float t)
     {
         var x = noise.snoise(p.xz + math.float2(0, t * 0.4f));
@@ -105,7 +111,7 @@ public sealed class LightController : MonoBehaviour
 
         foreach (var (go, light) in _instances)
         {
-            light.color = GetLightColor1(go.transform.position, Time.time);
+            light.color = GetLightColor(go.transform.position, Time.time);
             light.intensity = Intensity;
         }
     }

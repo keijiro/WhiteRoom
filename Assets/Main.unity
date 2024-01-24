@@ -1562,6 +1562,7 @@ MonoBehaviour:
   <Size>k__BackingField: 4
   <Margin>k__BackingField: 0.3
   <Intensity>k__BackingField: 600
+  <Animation>k__BackingField: 1
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
