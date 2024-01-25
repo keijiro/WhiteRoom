@@ -46,6 +46,7 @@ public sealed class LightController : MonoBehaviour
 
         var go = new GameObject("Light (Hidden)");
         go.hideFlags = HideFlags.HideAndDontSave;
+        go.layer = gameObject.layer;
 
         go.transform.parent = transform;
         go.transform.localPosition = math.float3(p.x, 0, p.y);
