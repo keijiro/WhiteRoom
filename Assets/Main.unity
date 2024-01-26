@@ -1419,7 +1419,7 @@ MeshRenderer:
   m_RenderingLayerMask: 257
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 773303782d6728149895c113e48acb71, type: 2}
+  - {fileID: -876546973899608171, guid: 26e50b87e3cfb49cabaea669d3b9fa66, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2439,7 +2439,7 @@ PlayableDirector:
   m_InitialState: 1
   m_WrapMode: 2
   m_DirectorUpdateMode: 1
-  m_InitialTime: 0
+  m_InitialTime: 52
   m_SceneBindings: []
   m_ExposedReferences:
     m_References:
