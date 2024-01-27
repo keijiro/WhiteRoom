@@ -2179,7 +2179,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 1
   volumeAnchorOverride: {fileID: 0}
-  antialiasing: 2
+  antialiasing: 3
   SMAAQuality: 2
   dithering: 0
   stopNaNs: 0
@@ -2325,7 +2325,7 @@ Camera:
     height: 1
   near clip plane: 0.1
   far clip plane: 100
-  field of view: 16.087343
+  field of view: 16.087345
   orthographic: 0
   orthographic size: 5
   m_Depth: 0
@@ -2439,7 +2439,7 @@ PlayableDirector:
   m_InitialState: 1
   m_WrapMode: 2
   m_DirectorUpdateMode: 1
-  m_InitialTime: 52
+  m_InitialTime: 59
   m_SceneBindings: []
   m_ExposedReferences:
     m_References:

@@ -7,9 +7,8 @@ void Scroller_float(float3 WPos, out float Mask, out float Line)
     Mask = frac(y1) > 0.8;
     Line = frac(y2) > 0.8;
 
-
     Mask = saturate(SimplexNoise(float3(0.2, _Time.y * 8, 0.5)));
-    Mask = smoothstep(0.2, 0.7, Mask);
+    Mask = smoothstep(0, 0.9, Mask);
 
     Line *= (1 - Mask);
 }
