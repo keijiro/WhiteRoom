@@ -586,7 +586,7 @@
     "m_Hidden": false,
     "m_ShaderOutputName": "TextureIntensity",
     "m_StageCapability": 3,
-    "m_Value": 4.0,
+    "m_Value": 2.0,
     "m_DefaultValue": 0.0,
     "m_Labels": []
 }
@@ -1625,9 +1625,9 @@
     "hlslDeclarationOverride": 0,
     "m_Hidden": false,
     "m_Value": {
-        "r": 0.0,
-        "g": 2.6817944049835207,
-        "b": 4.541205406188965,
+        "r": 4.541205406188965,
+        "g": 0.0,
+        "b": 1.1353013515472413,
         "a": 1.0
     },
     "isMainColor": false,
