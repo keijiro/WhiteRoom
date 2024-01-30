@@ -12,6 +12,7 @@ public sealed class MidiMixer : MonoBehaviour
     [field:SerializeField] public Transform Snare { get; set; }
     [field:SerializeField] public Transform Hat { get; set; }
     [field:SerializeField] public Renderer Target { get; set; }
+    [field:SerializeField] public LightController Light { get; set; }
 
     #endregion
 
@@ -21,7 +22,7 @@ public sealed class MidiMixer : MonoBehaviour
 
     void LateUpdate()
     {
-        if (Kick == null || Snare == null || Hat == null || Target == null) return;
+        if (Kick == null || Snare == null || Hat == null) return;
 
         if (_props == null) _props = new MaterialPropertyBlock();
 
@@ -31,7 +32,7 @@ public sealed class MidiMixer : MonoBehaviour
         input = math.saturate(input);
 
         _props.SetFloat("_AudioInput", input);
-        Target.SetPropertyBlock(_props);
+        Target?.SetPropertyBlock(_props);
     }
 
     #endregion

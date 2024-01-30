@@ -75,8 +75,8 @@ public sealed class LightController : MonoBehaviour
 
     Color GetLightColor1(float3 p, float t)
     {
-        var x = noise.snoise(p.xz + math.float2(0, t * 0.4f));
-        var v = math.saturate(1 + 0.8f * x);
+        var pn = math.float3(p.xz * 0.5f, 0.4f * t);
+        var v = math.saturate((noise.snoise(pn) + 1) * 0.6f);
         return Color.HSVToRGB(1, 0, v);
     }
 

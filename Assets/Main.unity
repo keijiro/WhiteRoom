@@ -2510,6 +2510,7 @@ MonoBehaviour:
   <Snare>k__BackingField: {fileID: 1082696867}
   <Hat>k__BackingField: {fileID: 868878777}
   <Target>k__BackingField: {fileID: 1247823331}
+  <Light>k__BackingField: {fileID: 1749624087}
 --- !u!1 &1101174863
 GameObject:
   m_ObjectHideFlags: 0
