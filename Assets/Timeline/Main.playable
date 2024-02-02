@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: RecorderClip
   m_EditorClassIdentifier: 
   enabled: 1
-  take: 4
+  take: 6
   captureEveryNthFrame: 1
   fileNameGenerator:
     m_Path:
@@ -152,7 +152,7 @@ MonoBehaviour:
   m_Version: 3
   m_AnimClip: {fileID: 0}
   m_Locked: 0
-  m_Muted: 0
+  m_Muted: 1
   m_CustomPlayableFullTypename: 
   m_Curves: {fileID: 0}
   m_Parent: {fileID: 11400000}
@@ -719,20 +719,20 @@ MonoBehaviour:
         - serializedVersion: 3
           time: 0
           value: 1
-          inSlope: -13.346569
-          outSlope: -13.346569
+          inSlope: -15.663458
+          outSlope: -15.663458
           tangentMode: 0
           weightedMode: 2
           inWeight: 0
-          outWeight: 0.22857141
+          outWeight: 0.12622584
         - serializedVersion: 3
-          time: 0.3
+          time: 0.5
           value: 0
-          inSlope: -0.0076308167
-          outSlope: -0.0076308167
+          inSlope: -0.03339892
+          outSlope: -0.03339892
           tangentMode: 0
           weightedMode: 1
-          inWeight: 0.9831933
+          inWeight: 0.6846597
           outWeight: 0
         m_PreInfinity: 2
         m_PostInfinity: 2
