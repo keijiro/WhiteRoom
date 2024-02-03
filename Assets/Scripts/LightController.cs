@@ -71,30 +71,34 @@ public sealed class LightController : MonoBehaviour
          {  0 => GetLightColor1(p, t),
             1 => GetLightColor2(p, t),
             2 => GetLightColor3(p, t),
-            _ => GetLightColor4(p, t) };
+            3 => GetLightColor4(p, t),
+            _ => GetLightColor5(p, t) };
 
     Color GetLightColor1(float3 p, float t)
+      => Color.white;
+
+    Color GetLightColor2(float3 p, float t)
     {
         var x = math.frac(p.z * 0.02f - t * 0.5f);
         var v = math.smoothstep(0, 0.8f, x) - math.smoothstep(0.8f, 1, x);
         return Color.HSVToRGB(1, 0, math.lerp(v, 1, 0.3f));
     }
 
-    Color GetLightColor2(float3 p, float t)
+    Color GetLightColor3(float3 p, float t)
     {
         var x = noise.snoise(p.xz + math.float2(0, t * 0.4f));
         var hue = math.frac(0.8f + 0.2f * x);
         return Color.HSVToRGB(hue, 0.8f, 1);
     }
 
-    Color GetLightColor3(float3 p, float t)
+    Color GetLightColor4(float3 p, float t)
     {
         var x = noise.snoise(p.xz + math.float2(0, t * 0.1f));
         var hue = math.frac(0.5f + 0.2f * x);
         return Color.HSVToRGB(hue, 0.4f, 1);
     }
 
-    Color GetLightColor4(float3 p, float t)
+    Color GetLightColor5(float3 p, float t)
     {
         var hue = math.frac((p.x + p.z + 0.8f * t) * 0.3f);
         return Color.HSVToRGB(hue, 0.9f, 1);
