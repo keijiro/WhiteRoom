@@ -150,7 +150,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   parameters:
     albedo: {r: 1, g: 1, b: 1, a: 1}
-    meanFreePath: 50
+    meanFreePath: 100
     blendingMode: 1
     priority: 0
     anisotropy: 0
@@ -1066,7 +1066,7 @@ Light:
   m_LightShadowCasterMode: 2
   m_AreaSize: {x: 0.5, y: 0.5}
   m_BounceIntensity: 1
-  m_ColorTemperature: 5800
+  m_ColorTemperature: 6400
   m_UseColorTemperature: 1
   m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
   m_UseBoundingSphereOverride: 0
@@ -1622,7 +1622,7 @@ Light:
   m_Type: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Intensity: 4331.2573
-  m_Range: 10
+  m_Range: 5
   m_SpotAngle: 22
   m_InnerSpotAngle: 12.743589
   m_CookieSize: 10
@@ -1664,7 +1664,7 @@ Light:
   m_LightShadowCasterMode: 2
   m_AreaSize: {x: 0.5, y: 0.5}
   m_BounceIntensity: 1
-  m_ColorTemperature: 5800
+  m_ColorTemperature: 6400
   m_UseColorTemperature: 1
   m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
   m_UseBoundingSphereOverride: 0
@@ -2081,7 +2081,7 @@ Light:
   m_Type: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Intensity: 4331.2573
-  m_Range: 10
+  m_Range: 5
   m_SpotAngle: 22
   m_InnerSpotAngle: 12.743589
   m_CookieSize: 10
@@ -2123,7 +2123,7 @@ Light:
   m_LightShadowCasterMode: 2
   m_AreaSize: {x: 0.5, y: 0.5}
   m_BounceIntensity: 1
-  m_ColorTemperature: 5800
+  m_ColorTemperature: 6400
   m_UseColorTemperature: 1
   m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
   m_UseBoundingSphereOverride: 0
@@ -2778,7 +2778,7 @@ Light:
   m_LightShadowCasterMode: 2
   m_AreaSize: {x: 0.5, y: 0.5}
   m_BounceIntensity: 1
-  m_ColorTemperature: 5800
+  m_ColorTemperature: 6400
   m_UseColorTemperature: 1
   m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
   m_UseBoundingSphereOverride: 0
@@ -3566,6 +3566,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1749624086}
   - component: {fileID: 1749624087}
+  - component: {fileID: 1749624088}
   m_Layer: 10
   m_Name: Ceiling
   m_TagString: Untagged
@@ -3605,8 +3606,30 @@ MonoBehaviour:
     y: 4
   <Size>k__BackingField: 4
   <Margin>k__BackingField: 0.3
-  <Intensity>k__BackingField: 300
+  <Intensity>k__BackingField: 400
   <Animation>k__BackingField: 0
+--- !u!95 &1749624088
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1749624085}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1927832093
 GameObject:
   m_ObjectHideFlags: 0
@@ -3643,6 +3666,8 @@ PlayableDirector:
     value: {fileID: 1092835631}
   - key: {fileID: -647982255818395430, guid: 98c867117f464d64892819520154a3f1, type: 2}
     value: {fileID: 568714061}
+  - key: {fileID: -39215493094861037, guid: 98c867117f464d64892819520154a3f1, type: 2}
+    value: {fileID: 1749624088}
   m_ExposedReferences:
     m_References:
     - a44f2c21163f80546b5bc96db75924df: {fileID: 581244348}
