@@ -3570,7 +3570,7 @@ MonoBehaviour:
   m_OutputFlowSlot:
   - link: []
   blendMode: 3
-  cullMode: 0
+  cullMode: 3
   zWriteMode: 0
   zTestMode: 0
   useAlphaClipping: 0
@@ -3611,7 +3611,7 @@ MonoBehaviour:
   onlyAmbientLighting: 0
   diffusionProfileAsset: {fileID: 0}
   multiplyThicknessWithAlpha: 0
-  doubleSided: 0
+  doubleSided: 1
   preserveSpecularLighting: 0
   enableSpecular: 1
   lightmapRemapMode: 0
