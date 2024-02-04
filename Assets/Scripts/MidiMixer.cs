@@ -31,6 +31,7 @@ public sealed class MidiMixer : MonoBehaviour
         input += Hat.localPosition.y;
         input = math.saturate(input);
 
+        Target?.GetPropertyBlock(_props);
         _props.SetFloat("_AudioInput", input);
         Target?.SetPropertyBlock(_props);
     }
