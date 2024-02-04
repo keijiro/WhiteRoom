@@ -319,6 +319,7 @@ GameObject:
   - component: {fileID: 175511041}
   - component: {fileID: 175511040}
   - component: {fileID: 175511039}
+  - component: {fileID: 175511044}
   m_Layer: 0
   m_Name: Sparkles
   m_TagString: Untagged
@@ -338,7 +339,8 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 1919931043}
   m_Father: {fileID: 867675685}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &175511039
@@ -356,7 +358,7 @@ MonoBehaviour:
   Space: 0
   m_Property:
     m_Name: Transform
-  Target: {fileID: 1247823329}
+  Target: {fileID: 1919931043}
 --- !u!114 &175511040
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -442,8 +444,8 @@ VisualEffect:
   m_Asset: {fileID: 8926484042661614526, guid: 405aeda0f7b0e496f9cb730e6b58214a, type: 3}
   m_InitialEventName: OnPlay
   m_InitialEventNameOverriden: 0
-  m_StartSeed: 0
-  m_ResetSeedOnPlay: 1
+  m_StartSeed: 1874092767
+  m_ResetSeedOnPlay: 0
   m_AllowInstancing: 1
   m_ResourceVersion: 1
   m_PropertySheet:
@@ -459,7 +461,7 @@ VisualEffect:
       - m_Value: {x: 0, y: 0, z: 0}
         m_Name: Transform_position
         m_Overridden: 1
-      - m_Value: {x: 1, y: 1.0000001, z: 1.0000001}
+      - m_Value: {x: 1.0000002, y: 1.0000001, z: 1.0000001}
         m_Name: Transform_scale
         m_Overridden: 1
     m_Vector4f:
@@ -481,6 +483,36 @@ VisualEffect:
         m_Overridden: 1
     m_Bool:
       m_Array: []
+--- !u!114 &175511044
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 175511037}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e52de21a22b6dd44c9cc19f810c65059, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Events:
+    m_Signals:
+    - {fileID: 11400000, guid: 1cfe88b89f3af4fa69238e3778c7afc1, type: 2}
+    m_Events:
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 175511043}
+          m_TargetAssemblyTypeName: UnityEngine.VFX.VisualEffect, UnityEngine
+          m_MethodName: SendEvent
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: Burst
+            m_BoolArgument: 0
+          m_CallState: 1
 --- !u!1 &201590084
 GameObject:
   m_ObjectHideFlags: 0
@@ -4301,6 +4333,60 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!1 &1919931042
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1919931043}
+  - component: {fileID: 1919931044}
+  m_Layer: 0
+  m_Name: Origin
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1919931043
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1919931042}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0.7071068, z: 0.7071068, w: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 175511038}
+  m_LocalEulerAnglesHint: {x: 359, y: 0.00000008743049, z: -0.000005009719}
+--- !u!95 &1919931044
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1919931042}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1927832093
 GameObject:
   m_ObjectHideFlags: 0
@@ -4361,6 +4447,8 @@ PlayableDirector:
     value: {fileID: 175511043}
   - key: {fileID: 6069718723005612734, guid: 98c867117f464d64892819520154a3f1, type: 2}
     value: {fileID: 1247823333}
+  - key: {fileID: -5724408686214408369, guid: 98c867117f464d64892819520154a3f1, type: 2}
+    value: {fileID: 1919931044}
   m_ExposedReferences:
     m_References:
     - a44f2c21163f80546b5bc96db75924df: {fileID: 581244348}
