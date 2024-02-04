@@ -1,5 +1,99 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-7801084248948555040
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 69fd8133db33f2546993a421d269f5f6, type: 3}
+  m_Name: Midi Animation Track (2)
+  m_EditorClassIdentifier: 
+  m_Version: 3
+  m_AnimClip: {fileID: 0}
+  m_Locked: 0
+  m_Muted: 0
+  m_CustomPlayableFullTypename: 
+  m_Curves: {fileID: 0}
+  m_Parent: {fileID: 11400000}
+  m_Children: []
+  m_Clips:
+  - m_Version: 1
+    m_Start: 7.466666666666667
+    m_ClipIn: 0
+    m_Asset: {fileID: 7731129140189313649, guid: 81c72e8ccf3b4a9469fe536936d68e99, type: 3}
+    m_Duration: 20.3389835357666
+    m_TimeScale: 1
+    m_ParentTrack: {fileID: -7801084248948555040}
+    m_EaseInDuration: 0
+    m_EaseOutDuration: 0
+    m_BlendInDuration: -1
+    m_BlendOutDuration: -1
+    m_MixInCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    m_MixOutCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    m_BlendInCurveMode: 0
+    m_BlendOutCurveMode: 0
+    m_ExposedParameterNames: []
+    m_AnimationCurves: {fileID: 0}
+    m_Recordable: 0
+    m_PostExtrapolationMode: 0
+    m_PreExtrapolationMode: 0
+    m_PostExtrapolationTime: Infinity
+    m_PreExtrapolationTime: 7.466666666666667
+    m_DisplayName: Guide Track 3
+  m_Markers:
+    m_Objects: []
+  template:
+    controls: []
 --- !u!114 &-7533054756384335194
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -152,7 +246,7 @@ MonoBehaviour:
   m_Version: 3
   m_AnimClip: {fileID: 0}
   m_Locked: 0
-  m_Muted: 1
+  m_Muted: 0
   m_CustomPlayableFullTypename: 
   m_Curves: {fileID: 0}
   m_Parent: {fileID: 11400000}
@@ -371,10 +465,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Version: 0
   m_Tracks:
+  - {fileID: -6636306207666420762}
   - {fileID: 926502181581091898}
   - {fileID: 1390887550845041876}
-  - {fileID: -6636306207666420762}
-  - {fileID: 4002942033211227261}
+  - {fileID: 5188505862034197607}
+  - {fileID: -7801084248948555040}
   - {fileID: -647982255818395430}
   - {fileID: -39215493094861037}
   m_FixedDuration: 0
@@ -567,226 +662,6 @@ MonoBehaviour:
     m_DisplayName: HAP Player
   m_Markers:
     m_Objects: []
---- !u!114 &4002942033211227261
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 69fd8133db33f2546993a421d269f5f6, type: 3}
-  m_Name: Midi Animation Track
-  m_EditorClassIdentifier: 
-  m_Version: 3
-  m_AnimClip: {fileID: 0}
-  m_Locked: 0
-  m_Muted: 0
-  m_CustomPlayableFullTypename: 
-  m_Curves: {fileID: 0}
-  m_Parent: {fileID: 11400000}
-  m_Children: []
-  m_Clips:
-  - m_Version: 1
-    m_Start: 7.466666666666667
-    m_ClipIn: 0
-    m_Asset: {fileID: -3813939448430723120, guid: 81c72e8ccf3b4a9469fe536936d68e99, type: 3}
-    m_Duration: 71.18643951416016
-    m_TimeScale: 1
-    m_ParentTrack: {fileID: 4002942033211227261}
-    m_EaseInDuration: 0
-    m_EaseOutDuration: 0
-    m_BlendInDuration: -1
-    m_BlendOutDuration: -1
-    m_MixInCurve:
-      serializedVersion: 2
-      m_Curve:
-      - serializedVersion: 3
-        time: 0
-        value: 0
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      - serializedVersion: 3
-        time: 1
-        value: 1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    m_MixOutCurve:
-      serializedVersion: 2
-      m_Curve:
-      - serializedVersion: 3
-        time: 0
-        value: 1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      - serializedVersion: 3
-        time: 1
-        value: 0
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    m_BlendInCurveMode: 0
-    m_BlendOutCurveMode: 0
-    m_ExposedParameterNames: []
-    m_AnimationCurves: {fileID: 0}
-    m_Recordable: 0
-    m_PostExtrapolationMode: 0
-    m_PreExtrapolationMode: 0
-    m_PostExtrapolationTime: Infinity
-    m_PreExtrapolationTime: 7.466666666666667
-    m_DisplayName: Guide Track 1
-  m_Markers:
-    m_Objects: []
-  template:
-    controls:
-    - enabled: 1
-      mode: 1
-      noteFilter:
-        note: 1
-        octave: 0
-      envelope:
-        attack: 0
-        decay: 1
-        sustain: 0
-        release: 1
-      curve:
-        serializedVersion: 2
-        m_Curve:
-        - serializedVersion: 3
-          time: 0
-          value: 1
-          inSlope: -8.584906
-          outSlope: -8.584906
-          tangentMode: 0
-          weightedMode: 0
-          inWeight: 0
-          outWeight: 0.047619045
-        - serializedVersion: 3
-          time: 0.3
-          value: 0
-          inSlope: 0
-          outSlope: 0
-          tangentMode: 0
-          weightedMode: 0
-          inWeight: 0
-          outWeight: 0
-        m_PreInfinity: 2
-        m_PostInfinity: 2
-        m_RotationOrder: 4
-      ccNumber: 1
-      targetComponent:
-        exposedName: a44f2c21163f80546b5bc96db75924df
-        defaultValue: {fileID: 0}
-      propertyName: localPosition
-      fieldName: m_LocalPosition
-      vector0: {x: 0, y: 0, z: 0, w: 0}
-      vector1: {x: 0, y: 1, z: 0, w: 0}
-    - enabled: 1
-      mode: 1
-      noteFilter:
-        note: 2
-        octave: 0
-      envelope:
-        attack: 0
-        decay: 1.5
-        sustain: 0
-        release: 1.5
-      curve:
-        serializedVersion: 2
-        m_Curve:
-        - serializedVersion: 3
-          time: 0
-          value: 1
-          inSlope: 0
-          outSlope: 0
-          tangentMode: 0
-          weightedMode: 0
-          inWeight: 0
-          outWeight: 0
-        - serializedVersion: 3
-          time: 0.3
-          value: 0
-          inSlope: 0
-          outSlope: 0
-          tangentMode: 0
-          weightedMode: 0
-          inWeight: 0
-          outWeight: 0
-        m_PreInfinity: 2
-        m_PostInfinity: 2
-        m_RotationOrder: 4
-      ccNumber: 1
-      targetComponent:
-        exposedName: 27b4837ddaddecb429a5e37c2e9fc4eb
-        defaultValue: {fileID: 0}
-      propertyName: localPosition
-      fieldName: m_LocalPosition
-      vector0: {x: 0, y: 0, z: 0, w: 0}
-      vector1: {x: 0, y: 1, z: 0, w: 0}
-    - enabled: 1
-      mode: 1
-      noteFilter:
-        note: 3
-        octave: 0
-      envelope:
-        attack: 0
-        decay: 0.5
-        sustain: 0
-        release: 0.5
-      curve:
-        serializedVersion: 2
-        m_Curve:
-        - serializedVersion: 3
-          time: 0
-          value: 1
-          inSlope: -15.663458
-          outSlope: -15.663458
-          tangentMode: 0
-          weightedMode: 2
-          inWeight: 0
-          outWeight: 0.12622584
-        - serializedVersion: 3
-          time: 0.5
-          value: 0
-          inSlope: -0.03339892
-          outSlope: -0.03339892
-          tangentMode: 0
-          weightedMode: 1
-          inWeight: 0.6846597
-          outWeight: 0
-        m_PreInfinity: 2
-        m_PostInfinity: 2
-        m_RotationOrder: 4
-      ccNumber: 1
-      targetComponent:
-        exposedName: 88cbeb0a4738a924e9c6906e0ac2e31e
-        defaultValue: {fileID: 0}
-      propertyName: localPosition
-      fieldName: m_LocalPosition
-      vector0: {x: 0, y: 0, z: 0, w: 0}
-      vector1: {x: 0, y: 1, z: 0, w: 0}
 --- !u!74 &5019419842519199289
 AnimationClip:
   m_ObjectHideFlags: 0
@@ -925,6 +800,142 @@ AnimationClip:
   m_HasGenericRootTransform: 0
   m_HasMotionFloatCurves: 0
   m_Events: []
+--- !u!114 &5188505862034197607
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 69fd8133db33f2546993a421d269f5f6, type: 3}
+  m_Name: Midi Animation Track (1)
+  m_EditorClassIdentifier: 
+  m_Version: 3
+  m_AnimClip: {fileID: 0}
+  m_Locked: 0
+  m_Muted: 0
+  m_CustomPlayableFullTypename: 
+  m_Curves: {fileID: 0}
+  m_Parent: {fileID: 11400000}
+  m_Children: []
+  m_Clips:
+  - m_Version: 1
+    m_Start: 7.466666666666667
+    m_ClipIn: 0
+    m_Asset: {fileID: -3213518946058576868, guid: 81c72e8ccf3b4a9469fe536936d68e99, type: 3}
+    m_Duration: 34.576271057128906
+    m_TimeScale: 1
+    m_ParentTrack: {fileID: 5188505862034197607}
+    m_EaseInDuration: 0
+    m_EaseOutDuration: 0
+    m_BlendInDuration: -1
+    m_BlendOutDuration: -1
+    m_MixInCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    m_MixOutCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    m_BlendInCurveMode: 0
+    m_BlendOutCurveMode: 0
+    m_ExposedParameterNames: []
+    m_AnimationCurves: {fileID: 0}
+    m_Recordable: 0
+    m_PostExtrapolationMode: 0
+    m_PreExtrapolationMode: 0
+    m_PostExtrapolationTime: Infinity
+    m_PreExtrapolationTime: 7.466666666666667
+    m_DisplayName: Guide Track 2
+  m_Markers:
+    m_Objects: []
+  template:
+    controls:
+    - enabled: 1
+      mode: 1
+      noteFilter:
+        note: 0
+        octave: 0
+      envelope:
+        attack: 0.2
+        decay: 1.4
+        sustain: 0
+        release: 1.4
+      curve:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 3
+          time: 0
+          value: 1
+          inSlope: -9.164418
+          outSlope: -9.164418
+          tangentMode: 0
+          weightedMode: 1
+          inWeight: 0.33333334
+          outWeight: 0.03529412
+        - serializedVersion: 3
+          time: 0.35
+          value: 0
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0.8415719
+          outWeight: 0
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      ccNumber: 1
+      targetComponent:
+        exposedName: 535c633babb194f0aabc967df7cba343
+        defaultValue: {fileID: 0}
+      propertyName: localPosition
+      fieldName: m_LocalPosition
+      vector0: {x: 0, y: 0, z: 0, w: 0}
+      vector1: {x: 1, y: 1, z: 1, w: 0}
 --- !u!114 &5901905651184603199
 MonoBehaviour:
   m_ObjectHideFlags: 1
