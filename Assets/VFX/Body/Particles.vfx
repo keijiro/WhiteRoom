@@ -3426,8 +3426,7 @@ MonoBehaviour:
   - {fileID: 114350483966675111}
   m_OutputSlots:
   - {fileID: 114350483966675112}
-  m_Subgraph: {fileID: 5371698745253816930, guid: 478178caed73b44df9394a8c37b06d4e,
-    type: 3}
+  m_Subgraph: {fileID: 5371698745253816930, guid: 478178caed73b44df9394a8c37b06d4e, type: 3}
 --- !u!114 &114350483966675108
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3648,7 +3647,7 @@ MonoBehaviour:
       m_Type:
         m_SerializableType: UnityEditor.VFX.Vector, Unity.VisualEffectGraph.Editor,
           Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-      m_SerializableObject: '{"vector":{"x":0.0,"y":-0.800000011920929,"z":0.0}}'
+      m_SerializableObject: '{"vector":{"x":0.0,"y":-0.800000011920929,"z":0.4000000059604645}}'
     m_Space: 0
   m_Property:
     name: Force
@@ -4981,8 +4980,7 @@ MonoBehaviour:
   - {fileID: 114350483966675222}
   m_OutputSlots:
   - {fileID: 114350483966675223}
-  m_Subgraph: {fileID: 5371698745253816930, guid: 478178caed73b44df9394a8c37b06d4e,
-    type: 3}
+  m_Subgraph: {fileID: 5371698745253816930, guid: 478178caed73b44df9394a8c37b06d4e, type: 3}
 --- !u!114 &114350483966675219
 MonoBehaviour:
   m_ObjectHideFlags: 0
