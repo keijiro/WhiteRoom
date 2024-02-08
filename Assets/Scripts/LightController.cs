@@ -14,7 +14,7 @@ public sealed class LightController : MonoBehaviour
     [field:SerializeField] public float Size { get; set; }
     [field:SerializeField] public float Margin { get; set; }
     [field:SerializeField] public float Intensity { get; set; }
-    [field:SerializeField] public uint Animation { get; set; }
+    [field:SerializeField] public int Animation { get; set; }
 
     #endregion
 
