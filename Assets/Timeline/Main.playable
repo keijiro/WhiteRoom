@@ -463,7 +463,7 @@ MonoBehaviour:
   m_Name: RecorderClip
   m_EditorClassIdentifier: 
   enabled: 1
-  take: 14
+  take: 17
   captureEveryNthFrame: 1
   fileNameGenerator:
     m_Path:
@@ -552,7 +552,7 @@ MonoBehaviour:
     - rid: 6968401828408721894
       type: {class: AccumulationSettings, ns: , asm: Unity.Recorder.Editor}
       data:
-        captureAccumulation: 1
+        captureAccumulation: 0
         samples: 10
         shutterInterval: 1
         shutterProfileType: 0
@@ -602,7 +602,7 @@ MonoBehaviour:
   m_Version: 3
   m_AnimClip: {fileID: 0}
   m_Locked: 0
-  m_Muted: 0
+  m_Muted: 1
   m_CustomPlayableFullTypename: 
   m_Curves: {fileID: 0}
   m_Parent: {fileID: 2218168932844130488}
@@ -712,7 +712,7 @@ MonoBehaviour:
   m_Version: 3
   m_AnimClip: {fileID: 0}
   m_Locked: 0
-  m_Muted: 1
+  m_Muted: 0
   m_CustomPlayableFullTypename: 
   m_Curves: {fileID: 0}
   m_Parent: {fileID: 2218168932844130488}
@@ -722,7 +722,7 @@ MonoBehaviour:
     m_Start: 6
     m_ClipIn: 0
     m_Asset: {fileID: -379182225173083817}
-    m_Duration: 80
+    m_Duration: 111.66666666666667
     m_TimeScale: 1
     m_ParentTrack: {fileID: -6636306207666420762}
     m_EaseInDuration: 0
@@ -3516,13 +3516,13 @@ AnimationClip:
       m_Curve:
       - serializedVersion: 3
         time: 92.6
-        value: {x: 0, y: -46.195637, z: 0}
-        inSlope: {x: 0, y: 21.166805, z: 0}
-        outSlope: {x: 0, y: 21.166805, z: 0}
+        value: {x: 0, y: -24.478666, z: 0}
+        inSlope: {x: 0, y: 28.730251, z: 0}
+        outSlope: {x: 0, y: 28.730251, z: 0}
         tangentMode: 0
         weightedMode: 0
         inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
-        outWeight: {x: 0.33333334, y: 0.16273485, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.08492476, z: 0.33333334}
       - serializedVersion: 3
         time: 94.96667
         value: {x: 0, y: 0, z: 0}
@@ -3583,19 +3583,19 @@ AnimationClip:
       m_Curve:
       - serializedVersion: 3
         time: 92.6
-        value: -46.195637
-        inSlope: 21.166805
-        outSlope: 21.166805
+        value: -24.478666
+        inSlope: 28.730251
+        outSlope: 28.730251
         tangentMode: 0
         weightedMode: 0
         inWeight: 0.33333334
-        outWeight: 0.16273485
+        outWeight: 0.08492476
       - serializedVersion: 3
         time: 94.96667
         value: 0
         inSlope: 0
         outSlope: 0
-        tangentMode: 136
+        tangentMode: 0
         weightedMode: 0
         inWeight: 0.33333334
         outWeight: 0.33333334
@@ -4085,7 +4085,7 @@ MonoBehaviour:
   m_Version: 3
   m_AnimClip: {fileID: 0}
   m_Locked: 0
-  m_Muted: 0
+  m_Muted: 1
   m_CustomPlayableFullTypename: 
   m_Curves: {fileID: 0}
   m_Parent: {fileID: 11400000}
@@ -5909,7 +5909,7 @@ MonoBehaviour:
   m_Name: RecorderClip
   m_EditorClassIdentifier: 
   enabled: 1
-  take: 14
+  take: 17
   captureEveryNthFrame: 1
   fileNameGenerator:
     m_Path:
@@ -5998,7 +5998,7 @@ MonoBehaviour:
     - rid: 6968401828408721894
       type: {class: AccumulationSettings, ns: , asm: Unity.Recorder.Editor}
       data:
-        captureAccumulation: 1
+        captureAccumulation: 0
         samples: 10
         shutterInterval: 1
         shutterProfileType: 0
