@@ -1122,7 +1122,7 @@ MonoBehaviour:
       m_Type:
         m_SerializableType: UnityEngine.Color, UnityEngine.CoreModule, Version=0.0.0.0,
           Culture=neutral, PublicKeyToken=null
-      m_SerializableObject: '{"r":6.883180618286133,"g":1.4054659605026246,"b":3.3958323001861574,"a":1.0}'
+      m_SerializableObject: '{"r":9300.3916015625,"g":0.0,"b":3426.460205078125,"a":1.0}'
     m_Space: -1
   m_Property:
     name: emissiveColor

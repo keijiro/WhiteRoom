@@ -602,14 +602,14 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 214129629}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.04917966, y: -0.34155136, z: 0.017899929, w: 0.93840486}
-  m_LocalPosition: {x: 0, y: 1, z: 0}
+  m_LocalRotation: {x: 0.2432104, y: -0.33036605, z: 0.08852133, w: 0.9076734}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1147246269}
-  m_Father: {fileID: 364288279}
-  m_LocalEulerAnglesHint: {x: 6, y: -40, z: 0}
+  m_Father: {fileID: 1564892357}
+  m_LocalEulerAnglesHint: {x: 30, y: -40, z: 0}
 --- !u!1 &223422350
 GameObject:
   m_ObjectHideFlags: 0
@@ -866,8 +866,6 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1108606290}
-  - {fileID: 214129630}
   - {fileID: 1361089533}
   - {fileID: 2006813857}
   m_Father: {fileID: 0}
@@ -1393,7 +1391,7 @@ MonoBehaviour:
   m_PointlightHDType: 0
   m_SpotLightShape: 0
   m_AreaLightShape: 0
-  m_Intensity: 500
+  m_Intensity: 100
   m_EnableSpotReflector: 1
   m_LuxAtDistance: 1
   m_InnerSpotPercent: 1.8679788
@@ -1509,7 +1507,7 @@ MonoBehaviour:
   m_ShadowVariant: 0
   m_ShadowPrecision: 0
   useOldInspector: 0
-  useVolumetric: 1
+  useVolumetric: 0
   featuresFoldout: 1
   m_AreaLightEmissiveMeshShadowCastingMode: 0
   m_AreaLightEmissiveMeshMotionVectorGenerationMode: 0
@@ -1530,7 +1528,7 @@ Light:
   serializedVersion: 11
   m_Type: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 849.3496
+  m_Intensity: 169.86992
   m_Range: 5
   m_SpotAngle: 50
   m_InnerSpotAngle: 12.743589
@@ -3596,14 +3594,14 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1108606289}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.04917966, y: 0.34155136, z: -0.017899929, w: 0.93840486}
-  m_LocalPosition: {x: 0, y: 1, z: 0}
+  m_LocalRotation: {x: 0.2432104, y: 0.33036605, z: -0.08852133, w: 0.9076734}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 528249144}
-  m_Father: {fileID: 364288279}
-  m_LocalEulerAnglesHint: {x: 6, y: 40, z: 0}
+  m_Father: {fileID: 1564892357}
+  m_LocalEulerAnglesHint: {x: 30, y: 40, z: 0}
 --- !u!1 &1115102581
 GameObject:
   m_ObjectHideFlags: 0
@@ -3701,7 +3699,7 @@ MonoBehaviour:
   m_PointlightHDType: 0
   m_SpotLightShape: 0
   m_AreaLightShape: 0
-  m_Intensity: 500
+  m_Intensity: 100
   m_EnableSpotReflector: 1
   m_LuxAtDistance: 1
   m_InnerSpotPercent: 1.8679788
@@ -3817,7 +3815,7 @@ MonoBehaviour:
   m_ShadowVariant: 0
   m_ShadowPrecision: 0
   useOldInspector: 0
-  useVolumetric: 1
+  useVolumetric: 0
   featuresFoldout: 1
   m_AreaLightEmissiveMeshShadowCastingMode: 0
   m_AreaLightEmissiveMeshMotionVectorGenerationMode: 0
@@ -3838,7 +3836,7 @@ Light:
   serializedVersion: 11
   m_Type: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 849.3496
+  m_Intensity: 169.86992
   m_Range: 5
   m_SpotAngle: 50
   m_InnerSpotAngle: 12.743589
@@ -4439,6 +4437,8 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1402506801}
+  - {fileID: 1108606290}
+  - {fileID: 214129630}
   m_Father: {fileID: 1517359159}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &1564892358
@@ -5008,7 +5008,7 @@ Transform:
   m_GameObject: {fileID: 1749624085}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 2.5, z: 1}
+  m_LocalPosition: {x: 0, y: 2.5, z: 0.46}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5028,7 +5028,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <Dimensions>k__BackingField:
     x: 5
-    y: 4
+    y: 6
   <Size>k__BackingField: 4
   <Margin>k__BackingField: 0.3
   <Intensity>k__BackingField: 400
