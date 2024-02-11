@@ -403,7 +403,7 @@ MonoBehaviour:
   - m_Version: 1
     m_Start: 7.466666666666667
     m_ClipIn: 0
-    m_Asset: {fileID: 7731129140189313649, guid: 81c72e8ccf3b4a9469fe536936d68e99, type: 3}
+    m_Asset: {fileID: -3213518946058576868, guid: 81c72e8ccf3b4a9469fe536936d68e99, type: 3}
     m_Duration: 20.3389835357666
     m_TimeScale: 1
     m_ParentTrack: {fileID: -7801084248948555040}
@@ -468,7 +468,7 @@ MonoBehaviour:
     m_PreExtrapolationMode: 0
     m_PostExtrapolationTime: Infinity
     m_PreExtrapolationTime: 7.466666666666667
-    m_DisplayName: Guide Track 3
+    m_DisplayName: Guide Track 2
   m_Markers:
     m_Objects: []
   template:
@@ -775,7 +775,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d0fc6f5187a81dc47999eefade6f0935, type: 3}
-  m_Name: Volumetric Video
+  m_Name: Volumetrics
   m_EditorClassIdentifier: 
   m_Version: 3
   m_AnimClip: {fileID: 0}
@@ -785,8 +785,8 @@ MonoBehaviour:
   m_Curves: {fileID: 0}
   m_Parent: {fileID: 11400000}
   m_Children:
-  - {fileID: 926502181581091898}
   - {fileID: 1390887550845041876}
+  - {fileID: 926502181581091898}
   m_Clips: []
   m_Markers:
     m_Objects: []
@@ -2831,7 +2831,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f669ed87322f9554d9dff5c29f48f549, type: 3}
-  m_Name: Alembic Track
+  m_Name: Alembic
   m_EditorClassIdentifier: 
   m_Version: 3
   m_AnimClip: {fileID: 0}
@@ -3267,7 +3267,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 15e0374501f39d54eb30235764636e0e, type: 3}
-  m_Name: Control Track
+  m_Name: HAP
   m_EditorClassIdentifier: 
   m_Version: 3
   m_AnimClip: {fileID: 0}
@@ -3726,7 +3726,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d0fc6f5187a81dc47999eefade6f0935, type: 3}
-  m_Name: Guide
+  m_Name: Song
   m_EditorClassIdentifier: 
   m_Version: 3
   m_AnimClip: {fileID: 0}
@@ -4089,8 +4089,8 @@ MonoBehaviour:
   - m_Version: 1
     m_Start: 7.466666666666667
     m_ClipIn: 0
-    m_Asset: {fileID: -3213518946058576868, guid: 81c72e8ccf3b4a9469fe536936d68e99, type: 3}
-    m_Duration: 87.45762634277344
+    m_Asset: {fileID: -3813939448430723120, guid: 81c72e8ccf3b4a9469fe536936d68e99, type: 3}
+    m_Duration: 156.61016845703125
     m_TimeScale: 1
     m_ParentTrack: {fileID: 3224647879324748618}
     m_EaseInDuration: 0
@@ -4154,7 +4154,7 @@ MonoBehaviour:
     m_PreExtrapolationMode: 0
     m_PostExtrapolationTime: Infinity
     m_PreExtrapolationTime: 7.466666666666667
-    m_DisplayName: Guide Track 2
+    m_DisplayName: Guide Track 1
   m_Markers:
     m_Objects: []
   template:
@@ -5418,8 +5418,8 @@ MonoBehaviour:
   - m_Version: 1
     m_Start: 7.466666666666667
     m_ClipIn: 0
-    m_Asset: {fileID: -3213518946058576868, guid: 81c72e8ccf3b4a9469fe536936d68e99, type: 3}
-    m_Duration: 154.99452083333333
+    m_Asset: {fileID: -3813939448430723120, guid: 81c72e8ccf3b4a9469fe536936d68e99, type: 3}
+    m_Duration: 156.61016845703125
     m_TimeScale: 1
     m_ParentTrack: {fileID: 5188505862034197607}
     m_EaseInDuration: 0
@@ -5483,7 +5483,7 @@ MonoBehaviour:
     m_PreExtrapolationMode: 0
     m_PostExtrapolationTime: Infinity
     m_PreExtrapolationTime: 7.466666666666667
-    m_DisplayName: Guide Track 2
+    m_DisplayName: Guide Track 1
   m_Markers:
     m_Objects: []
   template:
