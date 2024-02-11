@@ -20,7 +20,7 @@ void BodyShader_float
     l = saturate(l + min(0, n));
     l += l * pow(max(0, n), NoiseParams.z) * NoiseParams.y;
 
-    float a = lerp(-0.2, 1.8, Threshold) - WorldPosition.y;
+    float a = lerp(-0.2, 2, Threshold) - WorldPosition.y;
     a += 0.02 * SimplexNoise(WorldPosition * 15);
     l += (1 - smoothstep(0.0, 0.02, a)) * 1000;
 
