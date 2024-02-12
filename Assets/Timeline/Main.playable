@@ -1971,7 +1971,7 @@ MonoBehaviour:
     m_PreExtrapolationTime: 0
     m_DisplayName: ' '
   - m_Version: 1
-    m_Start: 86
+    m_Start: 86.06666666666666
     m_ClipIn: 0
     m_Asset: {fileID: -4635688043357250770}
     m_Duration: 1.8498840336377498
@@ -3078,7 +3078,7 @@ MonoBehaviour:
   m_Version: 3
   m_AnimClip: {fileID: 0}
   m_Locked: 0
-  m_Muted: 0
+  m_Muted: 1
   m_CustomPlayableFullTypename: 
   m_Curves: {fileID: 0}
   m_Parent: {fileID: 2403860971478993055}
