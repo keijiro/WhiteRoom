@@ -101,7 +101,7 @@ public sealed class LightController : MonoBehaviour
     Color GetLightColor5(float3 p, float t)
     {
         var hue = math.frac((p.x + p.z + 0.8f * t) * 0.3f);
-        return Color.HSVToRGB(hue, 0.9f, 1);
+        return Color.HSVToRGB(hue, 0.7f, 1);
     }
 
     #endregion

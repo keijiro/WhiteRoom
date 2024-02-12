@@ -405,7 +405,7 @@ VFXRenderer:
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
   m_StaticShadowCaster: 0
-  m_MotionVectors: 0
+  m_MotionVectors: 1
   m_LightProbeUsage: 0
   m_ReflectionProbeUsage: 0
   m_RayTracingMode: 0
@@ -4376,7 +4376,7 @@ MonoBehaviour:
   antialiasing: 2
   SMAAQuality: 2
   dithering: 1
-  stopNaNs: 0
+  stopNaNs: 1
   taaSharpenStrength: 0.5
   TAAQuality: 2
   taaSharpenMode: 2
@@ -4962,7 +4962,7 @@ PlayableDirector:
   m_InitialState: 1
   m_WrapMode: 2
   m_DirectorUpdateMode: 1
-  m_InitialTime: 6
+  m_InitialTime: 0
   m_SceneBindings:
   - key: {fileID: -647982255818395430, guid: 98c867117f464d64892819520154a3f1, type: 2}
     value: {fileID: 568714061}
